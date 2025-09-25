@@ -25,7 +25,7 @@ echo Đang cài đặt trình điều khiển cho card đồ họa NVIDIA Tesla 
 cd "C:\NVIDIA\DisplayDriver\553.62\Win11_Win10-DCH_64\International\" 
 setup.exe -s 
 echo Đang cài đặt Apollo Game Streaming...
-cd "C:\Users\admin\Desktop\games"
+cd "C:\Users\admin\Desktop\setup"
 Apollo.exe /S
 timeout /t 30 /nobreak
 echo Đang làm cho Display Adapter hoạt động...
