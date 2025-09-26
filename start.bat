@@ -18,17 +18,17 @@ diskpart /s "%~dp0extend.txt" >nul 2>&1
 REM -- Clean up --
 del "%~dp0extend.txt"
 
-echo ✅ Ổ C: đã được mở rộng (nếu chưa được phân bổ)
+echo ✅ O C: da duoc mo rong (neu chua duoc phan bo)
 endlocal
 
-echo Đang cài đặt trình điều khiển cho card đồ họa NVIDIA Tesla T4...
+echo Dang cai dat trinh dieu khien cho card do hoa NVIDIA Tesla T4...
 cd "C:\NVIDIA\DisplayDriver\553.62\Win11_Win10-DCH_64\International\" 
 setup.exe -s 
-echo Đang cài đặt Apollo Game Streaming...
+echo Dang cai dat Apollo Game Streaming...
 cd "C:\Users\admin\Desktop\setup"
 Apollo.exe /S
 timeout /t 30 /nobreak
-echo Đang làm cho Display Adapter hoạt động...
+echo Dang lam cho Display Adapter hoat dong...
 powershell -Command "Get-PnpDevice -FriendlyName 'Microsoft Hyper-V Video' | Disable-PnpDevice -Confirm:\$false"
 DisplaySwitch.exe /internal
 
