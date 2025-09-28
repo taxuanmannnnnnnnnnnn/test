@@ -26,14 +26,13 @@ echo Dang cai dat trinh dieu khien cho card do hoa NVIDIA Tesla T4...
 cd "C:\NVIDIA\DisplayDriver\553.62\Win11_Win10-DCH_64\International\" 
 setup.exe -s 
 echo Dang cai dat Apollo Game Streaming...
-cd "C:\Users\admin\Desktop\setup"
+cd "C:\Users\admin\Desktop\game"
 Apollo.exe /S
 timeout /t 30 /nobreak
 echo Dang lam cho Display Adapter hoat dong...
 powershell -Command "Get-PnpDevice -FriendlyName 'Microsoft Hyper-V Video' | Disable-PnpDevice -Confirm:\$false"
 DisplaySwitch.exe /internal
 
-start diskmgmt.msc
 start taskmgr
 start chrome "https://google.com"
 
