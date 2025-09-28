@@ -4,6 +4,7 @@ setlocal
 net start w32time
 w32tm /resync
 
+net user quackncloud dz
 
 REM -- Create diskpart script --
 >"%~dp0extend.txt" (
